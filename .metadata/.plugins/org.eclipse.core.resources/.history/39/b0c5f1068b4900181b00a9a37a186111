@@ -1,0 +1,7 @@
+/*
+ *  1. In this class we will reverse the letters of each word in a sentence but not the actual order of the words of the sentence
+ *  2. We will also reverse the order of the actual word whilst not reversing the order of the letters of each word
+ */
+public class ReverseSentence {
+
+}

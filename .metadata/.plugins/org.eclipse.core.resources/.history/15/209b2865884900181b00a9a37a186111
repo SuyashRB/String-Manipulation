@@ -1,0 +1,6 @@
+/*
+ *  In this class we will reverse each word in a sentence but not the order of the words of the sentence
+ */
+public class ReverseSentence {
+
+}

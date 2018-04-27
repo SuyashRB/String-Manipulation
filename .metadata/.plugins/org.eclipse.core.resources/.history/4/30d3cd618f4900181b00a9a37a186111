@@ -1,0 +1,45 @@
+/*
+ *  1. We will also reverse the order of the actual word whilst not reversing the order of the letters of each word
+ *  2. In this class we will reverse the letters of each word in a sentence but not the actual order of the words of the sentence
+ *  
+ */
+public class ReverseSentence {
+
+	public String reverseSentenceVersion1(String sentence) {
+		
+		String reversedSentence = "";
+		
+		String[] sentence1 = sentence.split(" ");
+		
+		for(int i = sentence1.length -1; i >= 0; i--) {
+			reversedSentence += sentence1[i] + " ";
+		}
+		
+		return reversedSentence;
+		
+	}
+	
+	public String reverseWordsNotSentence(String sentence) {
+		
+		String reversedSentence = "";
+		
+		String[] sentence1 = sentence.split(" ");
+		
+		for (int i = 0; i < sentence.length(); i++) {
+            for (int j = sentence1[i].length() - 1; j >= 0; j--) {
+                reversedSentence += sentence1[i].charAt(j);
+            }
+		}
+		
+		return reversedSentence;
+	}
+	
+	public static void main(String[] args) {
+		
+		ReverseSentence rs = new ReverseSentence();
+		
+		System.out.println(rs.reverseSentenceVersion1("Hello let us reverse this sentence"));
+		System.out.println(rs.reverseWordsNotSentence("Hello let us reverse this sentence"));
+	}
+	
+}
